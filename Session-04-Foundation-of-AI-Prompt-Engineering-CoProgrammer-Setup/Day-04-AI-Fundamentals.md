@@ -8,45 +8,45 @@
 
 ## 📋 Table of Contents
 
-1. [Session Overview](#session-overview)
+1. [Session Overview](#1-session-overview)
 
-2. [AI Fundamentals](#ai-fundamentals)
+2. [AI Fundamentals](#2-ai-fundamentals)
    - [What is AI?](#what-is-ai)
    - [Types of AI](#types-of-ai)
    - [What are the Core Components of AI?](#what-are-the-core-components-of-ai)
    - [How AI Works](#how-ai-works)
    - [Where, Why and How We Use Artificial Intelligence](#where-why-and-how-we-use-artificial-intelligence)
 
-3. [What is Machine Learning?](#what-is-machine-learning)
+3. [What is Machine Learning?](#3-what-is-machine-learning)
    - [Where, Why and How We Use Machine Learning](#where-why-and-how-we-use-machine-learning)
 
-4. [What is Deep Learning?](#what-is-deep-learning)
+4. [What is Deep Learning?](#4-what-is-deep-learning)
    - [Where, Why and How We Use Deep Learning](#where-why-and-how-we-use-deep-learning)
 
-5. [What is an LLM?](#what-is-llm)
+5. [What is an LLM?](#5-what-is-llm)
    - [Use Cases of LLM](#use-cases-of-llm)
    - [Where, Why and How We Use LLM](#where-why-and-how-we-use-llm)
 
-6. [Generative AI](#generative-ai)
+6. [Generative AI](#6-generative-ai)
    - [What is Generative AI?](#what-is-generative-ai)
    - [Generative AI Use Cases](#generative-ai-use-cases)
    - [Where, Why and How We Use Generative AI](#where-why-and-how-we-use-generative-ai)
 
-7. [What is Prompt Engineering?](#what-is-prompt-engineering)
+7. [What is Prompt Engineering?](#7-what-is-prompt-engineering)
 
-8. [What Happens When DevOps Meets AI?](#what-happens-when-devops-meets-ai)
+8. [What Happens When DevOps Meets AI?](#8-what-happens-when-devops-meets-ai)
 
-9. [How Can We Integrate AI with DevOps?](#how-can-we-integrate-ai-with-devops)
+9. [How Can We Integrate AI with DevOps?](#9-how-can-we-integrate-ai-with-devops)
 
-10. [What Are the AI Tools for DevOps?](#what-are-the-ai-tools-for-devops)
+10. [What Are the AI Tools for DevOps?](#10-what-are-the-ai-tools-for-devops)
 
-11. [Advantages of Adding AI to DevOps](#advantages-of-adding-ai-to-devops)
+11. [Advantages of Adding AI to DevOps](#11-advantages-of-adding-ai-to-devops)
 
-12. [What is AI in Cloud Computing?](#what-is-ai-in-cloud-computing)
+12. [What is AI in Cloud Computing?](#12-what-is-ai-in-cloud-computing)
 
-13. [What Are AI DevOps Platform Components?](#what-are-ai-devops-platform-components)
+13. [What Are AI DevOps Platform Components?](#13-what-are-ai-devops-platform-components)
 
-14. [Five Key Ways AI Transforms DevOps for the Better](#five-key-ways-ai-transforms-devops-for-the-better)
+14. [Five Key Ways AI Transforms DevOps for the Better](#14-five-key-ways-ai-transforms-devops-for-the-better)
 
 ---
 
