@@ -1,0 +1,19 @@
+Today's Agenda is to understand: What is DevOps,Why DevOps came into Existence,Real time problems in SDLC,Methodologies adopted for SDLC,Tasks of DevOps Engineer.
+What is DevOps: 
+    DevOps is a culture, practices, and set of principles that bring Development and Operations teams together to deliver software faster, reliably, and continuously.
+Real time problems in SDLC:
+     In Traditinal Software Development Process,we had Manual Process,Poor Collaboration,Integration issues,Late testing,Deployment failurs,Slow releases and Limited monitoring.But now we have adopted DevOps as a culture to solve these problems.
+Before DevOps became popular, organizations used SDLC methodologies such as Waterfall and Agile to develop and deliver software
+Agile methodology: 
+     An iterative approach where software is developed and delivered in small increments, with continuous customer feedback and frequent changes.
+Waterfall methodology:
+     A sequential approach where each SDLC phase is completed before moving to the next. Changes are difficult to handle later.
+Roles & Responsibilities of DevOps engineer:
+  In terms of CI/CD,the job of devOps engineer is to build and maintain automated pipelines for build, test, and deployment.
+  For infrastructure, DevOps engineer has to provision and manage cloud infrastructure using tools like AWS and Terraform. 
+  For Containerization, DevOps engineer has to build and manage Docker containers and Kubernetes workloads.
+  For Automation: He has to automate repetitive tasks and reduce manual errors.
+  For Monitoring: He has to monitor applications and infrastructure using tools like Prometheus, Grafana, and CloudWatch.
+  For Security: His jon is to implement security and scanning practices in the DevOps pipeline.
+  For Troubleshooting: DevOps engineer has to analyze logs and resolve deployment, infrastructure, and application issues.
+  For Collaboration: He has to work closely with developers, QA, security, and operations teams.
