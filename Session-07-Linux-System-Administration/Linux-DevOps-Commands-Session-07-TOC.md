@@ -1,116 +1,6 @@
-# 🔥 Session 07 COMPLETE — 55-Session Multi Cloud + DevOps with AI Program
+ 💽 Disk Monitoring Commands
 
-📚 Topic: Linux System Administration
-📦 Module: Linux Administration for DevOps + GCP
-
-
-💡 What I learned in today's LIVE session with Vikas Ratnawat:
-
-✅ df -h helps check disk usage; a full disk can cause application failures, but does not automatically crash the server.
-✅ systemctl enable nginx configures startup at boot; systemctl start nginx starts the service now.
-✅ top shows real-time CPU and memory — press P to sort by CPU usage
-
-
-# 🐧 Linux DevOps Commands — Simple Explanations, Real-Time Scenarios & Practical Examples
-
-These notes explain Linux commands in simple English for beginners learning Linux and DevOps.
-
-For every command, understand:
-
-What it means: What the command does.
-
-When to use it: The situation in which it is useful.
-
-Real-time scenario: A practical problem you might face as a DevOps engineer.
-
-
-## Table of Contents
-
-- [💽 Disk Monitoring Commands](#disk-monitoring-commands)
-  - [df -h — Check Disk Space](#df-h-check-disk-space)
-  - [df -Th — Check Disk Space and Filesystem Type](#df-th-check-disk-space-and-filesystem-type)
-  - [du -sh /var/log — Check the Size of the Log Directory](#du-sh-varlog-check-the-size-of-the-log-directory)
-  - [du -h --max-depth=1 /var — Find Large Directories](#du-h-max-depth1-var-find-large-directories)
-  - [lsblk — List Disks and Partitions](#lsblk-list-disks-and-partitions)
-  - [lsblk -f — Check Filesystems and Mountpoints](#lsblk-f-check-filesystems-and-mountpoints)
-  - [find /var/log -type f -size +100M — Find Large Log Files](#find-varlog-type-f-size-100m-find-large-log-files)
-  - [df -i — Check Inode Usage](#df-i-check-inode-usage)
-- [🧠 CPU Monitoring Commands](#cpu-monitoring-commands)
-  - [top — Monitor CPU, RAM and Running Processes](#top-monitor-cpu-ram-and-running-processes)
-  - [uptime — Check Uptime and System Load](#uptime-check-uptime-and-system-load)
-  - [lscpu — Check CPU Information](#lscpu-check-cpu-information)
-  - [nproc — Count Available Processing Units](#nproc-count-available-processing-units)
-  - [ps aux — List Running Processes](#ps-aux-list-running-processes)
-  - [ps aux --sort=-%cpu | head — Find CPU-Heavy Processes](#ps-aux-sort-cpu-head-find-cpu-heavy-processes)
-  - [ps -ef — Display Processes in Full Format](#ps-ef-display-processes-in-full-format)
-  - [vmstat 1 5 — Check System Activity](#vmstat-1-5-check-system-activity)
-- [🧮 RAM and Memory Monitoring Commands](#ram-and-memory-monitoring-commands)
-  - [free -h — Check Available RAM](#free-h-check-available-ram)
-  - [free -m — Display Memory in Megabytes](#free-m-display-memory-in-megabytes)
-  - [cat /proc/meminfo — Inspect Detailed Memory Information](#cat-procmeminfo-inspect-detailed-memory-information)
-  - [ps aux --sort=-%mem | head — Find Memory-Heavy Processes](#ps-aux-sort-mem-head-find-memory-heavy-processes)
-  - [watch -n 2 free -h — Monitor Memory Continuously](#watch-n-2-free-h-monitor-memory-continuously)
-  - [swapon --show — Check Swap Usage](#swapon-show-check-swap-usage)
-  - [vmstat -s — Display System Statistics](#vmstat-s-display-system-statistics)
-- [⚙️ Service Management Commands](#service-management-commands)
-  - [systemctl status nginx — Check Service Status](#systemctl-status-nginx-check-service-status)
-  - [systemctl start nginx — Start a Service Now](#systemctl-start-nginx-start-a-service-now)
-  - [systemctl enable nginx — Start a Service Automatically at Boot](#systemctl-enable-nginx-start-a-service-automatically-at-boot)
-  - [systemctl enable --now nginx — Enable and Start a Service](#systemctl-enable-now-nginx-enable-and-start-a-service)
-  - [systemctl stop nginx — Stop a Service](#systemctl-stop-nginx-stop-a-service)
-  - [systemctl restart nginx — Restart a Service](#systemctl-restart-nginx-restart-a-service)
-  - [systemctl reload nginx — Reload Configuration](#systemctl-reload-nginx-reload-configuration)
-  - [systemctl is-active nginx — Check Whether a Service Is Active](#systemctl-is-active-nginx-check-whether-a-service-is-active)
-  - [systemctl is-enabled nginx — Check Startup Configuration](#systemctl-is-enabled-nginx-check-startup-configuration)
-  - [systemctl --failed — Find Failed Services](#systemctl-failed-find-failed-services)
-  - [systemctl list-units --type=service — List Loaded Services](#systemctl-list-units-typeservice-list-loaded-services)
-- [📜 Log and Troubleshooting Commands](#log-and-troubleshooting-commands)
-  - [journalctl -u nginx -n 50 — View Recent Service Logs](#journalctl-u-nginx-n-50-view-recent-service-logs)
-  - [journalctl -u nginx -f — Follow Service Logs Live](#journalctl-u-nginx-f-follow-service-logs-live)
-  - [journalctl -b — View Logs from the Current Boot](#journalctl-b-view-logs-from-the-current-boot)
-  - [journalctl -p err -b — Find Error Messages](#journalctl-p-err-b-find-error-messages)
-  - [journalctl -u jenkins --since today — View Today's Jenkins Logs](#journalctl-u-jenkins-since-today-view-todays-jenkins-logs)
-  - [dmesg -T — Check Kernel Messages](#dmesg-t-check-kernel-messages)
-  - [tail -n 50 /var/log/syslog — Read Recent System Logs](#tail-n-50-varlogsyslog-read-recent-system-logs)
-  - [tail -f /var/log/syslog — Watch a Log File Live](#tail-f-varlogsyslog-watch-a-log-file-live)
-  - [grep -i error /var/log/syslog — Search for Errors](#grep-i-error-varlogsyslog-search-for-errors)
-  - [last — Check Recorded Login Sessions](#last-check-recorded-login-sessions)
-  - [who — Check Currently Logged-In Users](#who-check-currently-logged-in-users)
-- [🌐 Networking Commands](#networking-commands)
-  - [ip addr — Check Network Interfaces and IP Addresses](#ip-addr-check-network-interfaces-and-ip-addresses)
-  - [ip route — Check Network Routes](#ip-route-check-network-routes)
-  - [ping -c 4 google.com — Test Basic Network Reachability](#ping-c-4-googlecom-test-basic-network-reachability)
-  - [ss -tulpn — Check Listening Network Ports](#ss-tulpn-check-listening-network-ports)
-  - [curl -I https://example.com — Check an HTTP Endpoint](#curl-i-httpsexamplecom-check-an-http-endpoint)
-  - [hostname — Check the Server Name](#hostname-check-the-server-name)
-  - [getent hosts example.com — Check Hostname Resolution](#getent-hosts-examplecom-check-hostname-resolution)
-- [🔎 Process Management Commands](#process-management-commands)
-  - [ps -p 1234 -o pid,ppid,cmd,%cpu,%mem — Inspect a Specific Process](#ps-p-1234-o-pidppidcmdcpumem-inspect-a-specific-process)
-  - [pgrep nginx — Find a Process by Name](#pgrep-nginx-find-a-process-by-name)
-  - [pstree -p — View Process Relationships](#pstree-p-view-process-relationships)
-  - [kill -15 1234 — Request a Graceful Process Shutdown](#kill-15-1234-request-a-graceful-process-shutdown)
-  - [kill -9 1234 — Force a Process to Stop](#kill-9-1234-force-a-process-to-stop)
-- [🛠️ General Linux Commands](#general-linux-commands)
-  - [uname -a — Check Kernel and System Information](#uname-a-check-kernel-and-system-information)
-  - [date — Check System Date and Time](#date-check-system-date-and-time)
-  - [whoami — Check the Current User](#whoami-check-the-current-user)
-  - [id — Check User and Group Information](#id-check-user-and-group-information)
-  - [pwd — Check the Current Directory](#pwd-check-the-current-directory)
-  - [ls -lah — List Files and Directories](#ls-lah-list-files-and-directories)
-  - [free -h && df -h — Check RAM and Disk Together](#free-h-df-h-check-ram-and-disk-together)
-  - [watch -n 2 'df -h; free -h' — Monitor Disk and RAM Continuously](#watch-n-2-df-h-free-h-monitor-disk-and-ram-continuously)
-
-## 💽 Disk Monitoring Commands
-
-### df -h — Check Disk Space
-
-**Command:**
-
-```bash
-df -h
-```
-
-**Simple explanation:**
+# df -h — Check Disk Space
 
 This command checks how much storage space your Linux server has, how much is already occupied, and how much space is left.
 
@@ -127,10 +17,6 @@ Your manager reports that an application is failing to upload files. You run df 
 ### df -Th — Check Disk Space and Filesystem Type
 
 **Command:**
-
-```bash
-df -Th
-```
 
 **Simple explanation:**
 
@@ -1544,18 +1430,3 @@ Press Ctrl+C to stop monitoring.
 
 ✅ kill -15 requests a graceful shutdown — use kill -9 only as a last resort.
 
-🎯 How to Practise These Commands
-
-Open your Linux virtual machine or terminal.
-
-Practise a small group of commands each day.
-
-Read the output and identify the important fields.
-
-Connect each command to a troubleshooting scenario.
-
-Record your own output and findings in your GitHub notes.
-
-Never run destructive commands on production systems without understanding their impact.
-
-Remember: A DevOps engineer does not simply memorize commands. The goal is to understand the problem, choose the appropriate command, interpret the output and take the correct action.
