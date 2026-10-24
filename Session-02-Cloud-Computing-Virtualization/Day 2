@@ -1,0 +1,33 @@
+In today's session I have learned about cloud,how cloud is evolved.
+what is Cloud : A cloud is a on demand delivery of computing resources over the internet without having to own  and manage the undelying infrastructure ourselves.
+Basically Cloud Computing allows us to access servers,storage,databases,applications over the intenet without managing physical hardware.
+Earlier, there were no concept of cloud,organization hosted applications on phycial servers as the computiing resources on their premises which indirectly leads to huge expenditure for the resources 
+what is public cloud :
+      Public cloud is a cloud environment where cloud resources are owned and managed by a cloud provider and shared among multiple customers.Customers utlilized their services on a "pay as you go" approch.
+    Ex: AWS GCP AZURE etc.,
+what are the advantages of using public cloud:
+  Lower upfront cost — no need to buy physical infrastructure
+  Quickly create and remove resources
+  Easy to scale up or down
+  Cloud provider manages the underlying infrastructure
+  Resources are available globally
+what is private cloud:
+      Private cloud is a cloud environment dedicated to a single organization, where the infrastructure is not shared with other customers.
+  Ex: VMware-based private cloud, OpenStack private cloud.
+Advantages : Useful when organizations have strict compliance or regulatory requirements
+Based on the service model, cloud services are mainly divided into 3 types: IaaS, PaaS, and SaaS.
+1. IaaS — Infrastructure as a service-- We get basic infrastructure from the cloud provider, such as:
+- Virtual machines
+- Storage
+- Networking
+- Firewalls
+We are responsible for the OS, applications, and configurations.Ex: AWS EC2, Azure Virtual Machines, Google Compute Engine.
+Simple meaning: Provider gives us infrastructure; we manage the rest.
+2.PaaS — Platform as a Service-- The cloud provider manages the infrastructure and operating system, and provides a platform where we can deploy your application.
+   We mainly focus on your application and code.
+Ex: Google App Engine, AWS Elastic Beanstalk, Azure App Service.
+Simple meaning: Provider manages the platform; we focus on your application.
+3. SaaS — Software as a Service-- The cloud provider manages everything, and you simply use the software through the internet.
+Examples: Gmail, Microsoft 365, Salesforce.
+Simple meaning: Provider manages everything; we just use the software.
+    
